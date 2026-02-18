@@ -1,4 +1,8 @@
 import os
+TOKEN = os.getenv("8409919660:AAEYGWhPQ03dw3VALNJwW1rbA-ep_Pxe9HU")
+if not TOKEN:
+    raise RuntimeError("TOKEN env tak ada. Set di Railway Variables.")
+
 from telegram import (
     Update,
     ReplyKeyboardMarkup,
